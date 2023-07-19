@@ -112,8 +112,46 @@ section h2 {
     text-shadow: 2px 2px 4px grey;
 }
 
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fc7300;
+}
+.instituto {
+    margin-left: 10em;
+}
 
+/* MEDIASQUERIES */
 
+@media screen and (min-width:660px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .navBar {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .redesSociales {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .navBar {
+        font-size: 1.2em;
+        padding-inline: 1em;
+    }
+}
 
 
 
