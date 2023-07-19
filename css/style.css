@@ -6,3 +6,119 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --color-orange: #fc7300;
+    --color-green: #1f8a70;
+    --color-blue: #00425a;
+    --color-grey: #181823;
+    --color-white: #eff5f5;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Belanosima', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-white);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p,
+a {
+    font-family: 'Belanosima', sans-serif;
+}
+
+
+/* HEADER */
+header {
+    background: linear-gradient(rgba(49, 49, 49, 0.055), rgba(0, 0, 0, 0.315)),
+    url('/img/portadaLibros.jpg') no-repeat center bottom;
+    background-size: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2.5em;
+    color: var(--color-orange);
+    text-shadow: 4px 4px 6px black;
+}
+
+/* NAVBAR */
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+.navBar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-grey);
+}
+
+.navLi {
+    color: var(--color-orange);
+}
+
+.navLi:hover {
+    color: var(--color-white);
+}
+
+/* MAIN */
+h2{
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+section {
+    padding: 1.5em;
+}
+
+section h2 {
+    padding-bottom:0.5em;
+}
+
+#quienesSomos h2 {
+    color: var(--color-blue);
+    text-shadow: 2px 2px 4px grey;
+}
+
+#porQueElegirnos h2 {
+    color: var(--color-green);
+    text-shadow: 2px 2px 4px grey;
+}
+
+#propuestaEducativa h2 {
+    color: var(--color-orange);
+    text-shadow: 2px 2px 4px grey;
+}
+
+#ultimasNoticias h2 {
+    color: var(--color-grey);
+    text-shadow: 2px 2px 4px grey;
+}
+
+
+
+
+
+
+
+
+
+
+
