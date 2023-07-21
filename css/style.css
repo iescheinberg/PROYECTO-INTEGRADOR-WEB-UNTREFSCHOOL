@@ -1,162 +1,351 @@
 /* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:ital,wght@0,800;1,100&display=swap');
 
+:root {
+    --color-principal: #00425a;
+    --color-secundario: #181823;
+    --color-terceario: #fc7300;
+    --color-cuarto: #1f8a70;
+    --color-quinto: #eff5f5;
+
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-:root {
-    --color-orange: #fc7300;
-    --color-green: #1f8a70;
-    --color-blue: #00425a;
-    --color-grey: #181823;
-    --color-white: #eff5f5;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Belanosima', sans-serif;
-}
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
-    background-color: var(--color-white);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-secundario);
 }
-
 h1,
 h2,
 h3 {
-    font-family: 'Poppins', sans-serif;
-}
-
-p,
-a {
     font-family: 'Belanosima', sans-serif;
 }
 
 
 /* HEADER */
-header {
-    background: linear-gradient(rgba(49, 49, 49, 0.055), rgba(0, 0, 0, 0.315)),
-    url('/img/portadaLibros.jpg') no-repeat center bottom;
-    background-size: auto;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 0;
-    font-size: 2.5em;
-    color: var(--color-orange);
-    text-shadow: 4px 4px 6px black;
-}
-
-/* NAVBAR */
-ul {
-    list-style: none;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-}
-.navBar {
+header{
     display: flex;
-    flex-direction: column;
-    background-color: var(--color-grey);
+    align-items: center;
+    height: 3rem;
+    padding: 2rem;      
+    justify-content: space-between;
 }
 
-.navLi {
-    color: var(--color-orange);
+.logo{
+    max-width: 6em;
+}
+/* .abrir-menu{
+    display: none;
+} */
+
+/*nav*/
+
+.nav-bar{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color: var(--color-terceario);
+}
+.nav-bar a:hover {
+    color: var(--color-quinto);
 }
 
-.navLi:hover {
-    color: var(--color-white);
+.checkbtn{
+    float: right;
+    cursor: pointer;
+    display: none;
 }
+#check{
+    display: none;
+}
+
 
 /* MAIN */
-h2{
-    text-align: center;
+main{
+    background-color: var(--color-quinto);
+}
+h1{
+    display: flex;
+    font-size: 5rem;
+    height: 15rem;
+    color: var(--color-terceario);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.portada{
+    background-image: url(/img/edificio-interior.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img {
+    margin: 10px;
+    width: 40%;
+    height: auto;
 }
 
 p {
-    text-align: justify;
+    text-align: center;
+    margin: 1rem;
+    color: var(--color-quinto);
+}
+/* .seccion-1{
+    display: flex;
+} */
+#quienes-somos{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: var(--color-secundario);
+    color: var(--color-terceario);
+}
+.quienes-somos-img,
+.elegirnos-img, 
+.propuesta-img{
+    width: 50%;
+}
+.quienes, .propuesta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#por-que-elegirnos{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: var(--color-secundario);
+    color: var(--color-quinto);
+}
+#propuesta-educativa{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: var(--color-secundario);
+    color: var(--color-quinto);
+}
+h2{
+    background-color: var(--color-secundario);
+    color: var(--color-terceario);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-section {
-    padding: 1.5em;
+/* ULTIMAS NOTICIAS */
+#ultimas-noticias,
+.ultimas-noticias{
+    background-color: var(--color-secundario);
+    color: var(--color-terceario);
 }
-
-section h2 {
-    padding-bottom:0.5em;
+section{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
-#quienesSomos h2 {
-    color: var(--color-blue);
-    text-shadow: 2px 2px 4px grey;
+article{
+    margin-top: 10px;
+    width: 300px;
+    height: 400px;
 }
-
-#porQueElegirnos h2 {
-    color: var(--color-green);
-    text-shadow: 2px 2px 4px grey;
+h3{
+    text-align: center;
+    font-size: 30px;
 }
+.noticias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-secundario);
+    color: #fc7300;
 
-#propuestaEducativa h2 {
-    color: var(--color-orange);
-    text-shadow: 2px 2px 4px grey;
+
 }
-
-#ultimasNoticias h2 {
-    color: var(--color-grey);
-    text-shadow: 2px 2px 4px grey;
+.foto-noticias{
+    width: 100%;
+    height: auto;
 }
 
 /* FOOTER */
-footer {
+footer{
+    color: var(--color-terceario);
+    background-color: var(--color-quinto);
+}
+
+footer img{
+    width: 50px;
+    height: auto;   
+}
+/* REDES SOCIALES */
+.redes-sociales{
     display: flex;
-    justify-content: space-around;
-    background-color: #fc7300;
+    margin-top: 0.5rem;
 }
-.instituto {
-    margin-left: 10em;
+.redes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 3.5rem;
 }
-
-/* MEDIASQUERIES */
-
-@media screen and (min-width:660px) {
-    h1 {
-        font-size: 4em;
-    }
-
-    .navBar {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .redesSociales {
-        display: flex;
-        flex-direction: column;
-    }
+footer p{
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
 }
-
-@media screen and (min-width: 1000px) {
-    .navBar {
-        font-size: 1.2em;
-        padding-inline: 1em;
-    }
+footer iframe{
+    margin-top: 2rem;
+    width: 250px;
+    height: 250px; 
+    margin-left: -1rem;
 }
 
 
+/* formulario */
+
+.formulario {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario input,
+.formulario textarea {
+    margin-bottom: 10px;
+    padding: 1em;
+}
+.textarea{
+    height: 0px;
+    width: 298px;
+    resize:none;
+}
+.formulario textarea {
+    height: 150px;
+}
+
+.enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.formulario button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: var(--color-cuarto);
+    color: var(--color-secundario);
+}
 
 
+#contacto{
+    margin-top: 5rem;
+    font-size: 1rem;
+}
+.contacto{
+    color: var(--color-terceario);
+    
+}
+.contacto-footer{
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--color-cuarto);
+}
+.click-aqui{
+    font-size: 0.7rem;
+}
 
 
+.derechos{
+    margin-top: 40px;
+    background-color: var(--color-principal);
+    height: 20px;
+    justify-content: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .checkbtn{
+        display: block;
+    }
+
+    nav ul li{
+        display: none;
+    }
+
+    
+
+    h1{
+        text-align: center;
+    }
+
+    #quienes-somos,
+    #por-que-elegirnos,
+    #propuesta-educativa{
+    flex-wrap: wrap;
+    
+    }
+   .quienes-somos-img,
+   .elegirnos-img,
+   .propuesta-img{
+    width: 95%;
+    margin: 10px;
+   }
+  p{
+    margin: 1rem;
+    background-color: var(--color-secundario);
+  }
+  .maps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .contacto{
+    background-color: var(--color-quinto);
+  }
+    
+}
 
 
+@media screen and (max-width: 320px) {
+
+  h1{
+    font-size: 3rem;
+  }
+
+  .redes-sociales{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .redes{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .mapa{
+    position: relative;
+    margin-left: 2rem;
+
+  }
+  .formulario{
+    align-items: center;
+  }
+}
