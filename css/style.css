@@ -83,7 +83,7 @@ h1{
 }
 
 .portada{
-    background-image: url(/img/edificio-interior.jpg);
+    background-image: url(./img/edificio-interior.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
